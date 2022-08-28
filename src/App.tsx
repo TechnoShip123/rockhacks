@@ -2,16 +2,17 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
+      <nav>
+        <a className="homeIcon" href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
-      </div>
-      <h1>RockHacks</h1>
+        <a>Test1</a>
+      </nav>
+      <h1>RockHackssssssssssssssssssssssssssssss</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -29,4 +30,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

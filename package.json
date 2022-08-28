@@ -13,6 +13,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@emotion/styled": "^11.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -36,6 +37,6 @@
     "vite": "^3.0.7"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "*.ts": "eslint --cache --fix"
   }
 }
