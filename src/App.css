@@ -7,7 +7,7 @@
 
 nav {
     display: inline-block;
-    margin: 0;
+    margin: 6px 0 0;
     padding: 0;
     background-color: whitesmoke;
     width: 100%;
@@ -16,7 +16,7 @@ nav {
 
 nav > .homeIcon {
     margin-left: 6px;
-    margin-right: 32px;
+    margin-right: 2em;
     will-change: filter;
 }
 
@@ -25,11 +25,47 @@ nav > .homeIcon:hover {
 }
 
 nav > a {
-    margin-right: 12px;
+    color: white;
+    margin-right: 24px;
     overflow: hidden;
     white-space: nowrap;
     vertical-align: middle;
+    text-decoration: inherit;
 
     font-size: large;
-    font-weight: bold;
+    font-weight: 700;
+}
+
+nav > a:hover {
+    background: linear-gradient(90deg, #FA894A 0%, #EE37FF 100%);
+    /* Use text as a mask for background, so gradient text shows */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*noinspection CssInvalidPropertyValue*/
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+
+nav > a:visited {
+    color: inherit;
+}
+
+/*
+TODO: Modify styling for max-width: 512px
+Use a collapsing navbar for this scenario?
+ */
+@media (max-width: 512px) {
+    nav > .homeIcon {
+        margin-right: 1em;
+    }
+    nav > a {
+        margin-right: 12px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    nav {
+        background-color: rgba(26, 26, 26, 0);
+    }
 }

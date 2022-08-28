@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import * as Style from './AppStyles';
 import './App.css'
 
 function App() {
@@ -6,13 +7,15 @@ function App() {
 
   return (
     <div className="App">
+
       <nav>
-        <a className="homeIcon" href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a>Test1</a>
+        <a className="homeIcon" href="/"><img src="/vite.svg" alt="RockHacks logo" /></a>
+        <Style.NavLink_GRADIENT_WARM1 href='#about'>About</Style.NavLink_GRADIENT_WARM1>
+        <Style.NavLink_GRADIENT_COOL1 href='#sponsors'>Sponsors</Style.NavLink_GRADIENT_COOL1>
+        <Style.NavLink_GRADIENT_COOL2 href='#faq'>FAQ</Style.NavLink_GRADIENT_COOL2>
       </nav>
-      <h1>RockHackssssssssssssssssssssssssssssss</h1>
+
+      <h1>RockHackssssssssssssssssssssssssss</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
