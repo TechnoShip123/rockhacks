@@ -1,36 +1,90 @@
-import { useState } from 'react'
+import JSConfetti from 'js-confetti';
 import * as Style from './AppStyles';
-import './App.css'
+import './App.css';
+import c1 from './assets/card1.jpg';
+import c2 from './assets/card2.jpg';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const jsConfetti = new JSConfetti();
   return (
-    <div className="App">
-
+    <div className='App'>
       <nav>
-        <a className="homeIcon" href="/"><img src="/vite.svg" alt="RockHacks logo" /></a>
+        <a className='homeIcon' href='/'>
+          <img src='/vite.svg' alt='RockHacks logo' />
+        </a>
+        <Style.NavLink_GRADIENT_WARM1 href='#about'>Home</Style.NavLink_GRADIENT_WARM1>
         <Style.NavLink_GRADIENT_WARM1 href='#about'>About</Style.NavLink_GRADIENT_WARM1>
-        <Style.NavLink_GRADIENT_COOL1 href='#sponsors'>Sponsors</Style.NavLink_GRADIENT_COOL1>
         <Style.NavLink_GRADIENT_COOL2 href='#faq'>FAQ</Style.NavLink_GRADIENT_COOL2>
+        <Style.NavLink_GRADIENT_COOL1 href='#sponsors'>Sponsors</Style.NavLink_GRADIENT_COOL1>
       </nav>
 
-      <h1>RockHackssssssssssssssssssssssssss</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <section className='home'>
+        <h1>rock hacks</h1>
+        <h3>October 21 – 23</h3>
+        <div className='card'>
+          <button
+            onClick={() => {
+              jsConfetti.addConfetti({ confettiRadius: 10, confettiNumber: 1500 });
+              // jsConfetti.addConfetti({ emojis: ['💾'] });
+              window.open(
+                'https://my.forms.app/dyutiphaneesh/rockhacksregistration',
+                '_blank',
+                'popup'
+              );
+              // setTimeout(() => {
+              //   window.open(
+              //     'https://my.forms.app/dyutiphaneesh/rockhacksregistration',
+              //     '_blank',
+              //     'popup'
+              //   );
+              // }, 250);
+            }}
+          >
+            Register now!
+          </button>
+        </div>
+      </section>
+
+      <section className='about'>
+        <h2>Welcome to Rock Hacks!</h2>
         <p>
-          Get started by editing the <code>src/App.tsx</code> file.
-          <br />
-          <code>npm run dev</code> to start the development environment.
+          Running for 36 hours, Rock Hacks will be the first IRL hackathon in North Austin. Students
+          will participate in various workshops, mini events, and create their own projects within
+          our track areas!
         </p>
-      </div>
-      <p className="read-the-docs">
-        Initial commit for the <b>RockHacks</b> site. Boring, I know.
-      </p>
+        <Container>
+          <Row>
+            <Col className='card' style={{ objectFit: 'cover' }}>
+              <img src={c1} />
+            </Col>
+            <Col>some text</Col>
+          </Row>
+          <Row>
+            <Col>some text</Col>
+            <Col className='card'>
+              <img src={c2} />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section className='faq'>
+        <h1>FAQ</h1>
+        <Container>
+          <Row>
+            <Col>
+              <h4>what is a hackathon?</h4>
+            </Col>
+          </Row>
+          <Row></Row>
+          <Row></Row>
+          <Row></Row>
+        </Container>
+      </section>
+      <section className='sponsors'></section>
+      <section className='team'></section>
     </div>
-  )
+  );
 }
 
 export default App;

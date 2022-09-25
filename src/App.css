@@ -51,6 +51,17 @@ nav > a:visited {
     color: inherit;
 }
 
+.home {
+    color: white;
+    background-color: #0C4762;
+    padding: 10px;
+    text-align: center;
+}
+
+.home > h1 {
+    font-size: 45px;
+}
+
 /*
 TODO: Modify styling for max-width: 512px
 Use a collapsing navbar for this scenario?
