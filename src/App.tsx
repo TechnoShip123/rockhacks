@@ -96,14 +96,6 @@ function App() {
         <Container fluid='md'>
           <Row>
             <Col>
-              <div className='q-and-a'>
-                <p className='faq-question faq-text'>
-                  Who can participate?
-                </p>
-                <p className='faq-answer faq-text'>
-                  Any current student from grades 8 to 12! If you're under/over that grade level, email us and we'll see what we can do. And if you're interested in mentoring, send us an email!
-                </p>
-              </div>
               {Object.entries(qAndA_Left).map(([key, value]) => (
                                 <div className="col1">
                                     <p className="faq-question faq-text">
