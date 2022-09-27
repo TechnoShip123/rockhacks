@@ -1,5 +1,4 @@
 .App {
-    width: 75%;
     margin: 0 auto;
     overflow-wrap: break-word;
     -webkit-align-content: center;
@@ -9,7 +8,7 @@ nav {
     display: inline-block;
     margin: 6px 0 0;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: white;
     width: 100%;
     border-radius: 6px;
 }
@@ -53,14 +52,14 @@ nav > a:visited {
 
 .home {
     color: white;
-    background-color: #0C4762;
-    padding: 10px;
+    background-color: #364772;
+    padding: 10vw;
     text-align: center;
 }
-
+/* 
 .home > h1 {
     font-size: 45px;
-}
+} */
 
 /*
 TODO: Modify styling for max-width: 512px
@@ -79,4 +78,68 @@ Use a collapsing navbar for this scenario?
     nav {
         background-color: rgba(26, 26, 26, 0);
     }
+}
+
+.intro-container {
+    padding-left: 2vw;
+}
+
+.about {
+    text-align: center;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+  
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.faq {
+    background-color: #90AFFF;
+}
+
+.faq-title {
+    padding-left: 6.7vw;
+}
+
+.faq-question {
+    font-weight: bold;
+}
+
+.faq-text {
+    font-size: 2vw;
+}
+
+.rounded-box {
+    background-color: #F9FAFC;
+}
+
+.ppl-container {
+    width: 100%;
+}
+.ppl-img {
+    display: inline-block;
+    height: 7vw;
+    width: 7vw;
+    border-radius: 7vw;
+    margin-left: 2vw;
+}
+.ppl-text {
+    display: inline-block;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ppl-name {
+    font-weight: bold;
+    vertical-align: top;
+    font-size: 2vw;
+    line-height: 2vw;
+    font-family: 'Courier Prime';
+}
+.ppl-description {
+    font-size: 1.5vw;
+    line-height: 2vw;
 }
