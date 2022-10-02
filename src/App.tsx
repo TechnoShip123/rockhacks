@@ -34,7 +34,7 @@ function App() {
     <div className='App'>
       <nav>
         <a className='homeIcon' href='/'>
-          <img src='/assets/logo.svg' alt='RockHacks logo' />
+          <img src='./assets/logo.svg' alt='RockHacks logo' />
         </a>
         <Style.NavLink_GRADIENT_WARM1 href='#about'>Home</Style.NavLink_GRADIENT_WARM1>
         <Style.NavLink_GRADIENT_WARM1 href='#about'>About</Style.NavLink_GRADIENT_WARM1>
@@ -49,7 +49,7 @@ function App() {
           <button
             className='register-button'
             onClick={() => {
-              jsConfetti.addConfetti({ confettiRadius: 10, confettiNumber: 1500 });
+              jsConfetti.addConfetti({ confettiRadius: 8, confettiNumber: 1000 });
               // jsConfetti.addConfetti({ emojis: ['💾'] });
               window.location.href = 'https://my.forms.app/form/6331005dc4ed8f4625a2b99e';
               // window.open(
