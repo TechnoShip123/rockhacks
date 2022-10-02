@@ -34,7 +34,7 @@ function App() {
     <div className='App'>
       <nav>
         <a className='homeIcon' href='/'>
-          <img src='/logo.svg' alt='RockHacks logo' />
+          <img src='/assets/logo.svg' alt='RockHacks logo' />
         </a>
         <Style.NavLink_GRADIENT_WARM1 href='#about'>Home</Style.NavLink_GRADIENT_WARM1>
         <Style.NavLink_GRADIENT_WARM1 href='#about'>About</Style.NavLink_GRADIENT_WARM1>
