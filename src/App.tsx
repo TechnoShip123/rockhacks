@@ -51,19 +51,19 @@ function App() {
             onClick={() => {
               jsConfetti.addConfetti({ confettiRadius: 8, confettiNumber: 1000 });
               // jsConfetti.addConfetti({ emojis: ['💾'] });
-              window.location.href = 'https://my.forms.app/form/6331005dc4ed8f4625a2b99e';
+              // window.location.href = 'https://my.forms.app/form/6331005dc4ed8f4625a2b99e';
               // window.open(
               //   'https://my.forms.app/form/6331005dc4ed8f4625a2b99e',
               //   '_blank',
               //   'popup'
               // );
-              // setTimeout(() => {
-              //   window.open(
-              //     'https://my.forms.app/form/6331005dc4ed8f4625a2b99e',
-              //     '_blank',
-              //     'popup'
-              //   );
-              // }, 250);
+              setTimeout(() => {
+                window.open(
+                  'https://my.forms.app/form/6331005dc4ed8f4625a2b99e',
+                  '_blank',
+                  'popup'
+                );
+              }, 250);
             }}
           >
             Register now!
