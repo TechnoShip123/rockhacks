@@ -1,0 +1,210 @@
+.App {
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    -webkit-align-content: center;
+}
+
+nav {
+    display: inline-block;
+    margin: 6px 0 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    border-radius: 6px;
+}
+
+nav > .homeIcon {
+    margin-left: 6px;
+    margin-right: 2em;
+    will-change: filter;
+}
+
+nav > .homeIcon:hover {
+    filter: drop-shadow(0 0 9px #646cffaa);
+}
+
+nav > a {
+    color: white;
+    margin-right: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-decoration: inherit;
+
+    font-size: large;
+    font-weight: 700;
+}
+
+nav > a:hover {
+    background: linear-gradient(90deg, #FA894A 0%, #EE37FF 100%);
+    /* Use text as a mask for background, so gradient text shows */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*noinspection CssInvalidPropertyValue*/
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+
+nav > a:visited {
+    color: inherit;
+}
+
+.home {
+    color: white;
+    background-color: #364772;
+    padding: 10vw;
+    text-align: center;
+}
+/* 
+.home > h1 {
+    font-size: 45px;
+} */
+
+/*
+TODO: Modify styling for max-width: 512px
+Use a collapsing navbar for this scenario?
+ */
+@media (max-width: 512px) {
+    nav > .homeIcon {
+        margin-right: 1em;
+    }
+    nav > a {
+        margin-right: 12px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    nav {
+        background-color: rgba(26, 26, 26, 0);
+    }
+}
+
+.team {
+    padding-top: 2vw;
+    padding-bottom: 3vw;
+    background-color: #D6E1FF;
+}
+
+.team-title {
+    margin-left: 12vw;
+    font-family: 'Inter', sans-serif;
+}
+
+.sponsor-title {
+    padding-top: 2vw;
+    margin-left: 12vw;
+    font-family: 'Inter', sans-serif;
+}
+
+.intro-container {
+    padding-left: 2vw;
+}
+
+.about {
+    text-align: center;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+  
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.faq {
+    background-color: #90AFFF;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    padding-bottom: 5vw;
+    padding-top: 2vw;
+}
+
+.faq-left {
+    width: 5vw;
+}
+
+.faq-right {
+    width: 5vw;
+}
+
+.faq-title {
+    font-family: 'Inter', sans-serif;
+}
+
+.faq-question {
+    font-weight: bold;
+}
+
+.faq-text {
+    font-size: 1.5vw;
+}
+
+.ppl-container {
+    width: 100%;
+    margin-bottom: 2vw;
+}
+.ppl-img {
+    display: inline-block;
+    height: 7vw;
+    width: 7vw;
+    border-radius: 7vw;
+    margin-left: 2vw;
+}
+.ppl-text {
+    display: inline-block;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ppl-name {
+    font-weight: bold;
+    vertical-align: top;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    font-family: 'Courier Prime';
+}
+.ppl-description {
+    font-size: 1.25vw;
+    line-height: 2vw;
+}
+
+.faq-container {
+    background-color: white;
+    border-radius: 5vw;
+    padding: 6vw;
+    box-shadow: 1vw 2vw 5vw rgba(0, 0, 0, 0.4);
+}
+
+.image {
+    width: 100%;
+}
+
+.sponsor-image {
+    width: 30vw;
+}
+
+.sponsor-container {
+    padding-left: 15vw;
+    padding-bottom: 5vw;
+}
+
+.sponsor-column {
+    justify-content: right;
+}
+
+.nav-span {
+    width: 100%;
+    position: absolute;
+    top: 2.5vw;
+    right: -45vw;
+    vertical-align: auto;
+}
+
+.logo {
+    display: inline;
+    height: 7vw;
+    width: 7vw;
+    margin: 0.5vw;
+}
