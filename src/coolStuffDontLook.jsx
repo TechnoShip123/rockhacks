@@ -1,16 +1,12 @@
 import Ppl from './PersonWidget';
 import { Container, Row, Col } from 'react-bootstrap';
+import amishaImage from './assets/team/amisha.jpeg'
+import dyutiImage from './assets/team/dyuti.jpeg'
+import nithinImage from './assets/team/nithin.jpeg'
+import sopanImage from './assets/team/sopan.jpeg'
+import tobyImage from './assets/team/toby.jpeg'
 
 export default function Team() {
-  //@ts-ignore
-  let url_for_shrek = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaVDR58XvoG5HUAiw0zdPuPZXd3hsQIw8HZQ&usqp=CAU';
-  let teamMember = [
-    ['../public/team/amisha.jpeg', 'Amisha Sao', 'Executive Director, co-founder'], 
-    ['../public/team/nithin.jpeg', 'Nithin Reddy', 'Executive Director, co-founder'], 
-    ['../public/team/sopan.jpeg', 'Sopan Jalkote', 'Executive Director, co-founder'], 
-    ['../public/team/dyuti.jpeg', 'Dyuti Phaneesh', 'Executive Director, co-founder'],
-    ['../public/team/toby.jpeg', 'Toby Saunders', 'Developer']];
-
   return(
     <section className='team'>
         <h2 className="team-title">
@@ -19,21 +15,51 @@ export default function Team() {
         <Container>
           <Row>
             <Col>
-              <Ppl src={teamMember[0][0]} name={teamMember[0][1]} description={teamMember[0][2]} />
+              <div className='ppl-container'>
+              <img className='ppl-img' src={amishaImage}></img>
+              <span className='ppl-text'>
+              <div className='ppl-name'>{'Amisha Sao'}</div>
+              <div className='ppl-description'>{'Executive Director, co-founder'}</div>
+              </span>
+              </div>
             </Col>
             <Col>
-              <Ppl src={teamMember[1][0]} name={teamMember[1][1]} description={teamMember[1][2]} />
+              <div className='ppl-container'>
+              <img className='ppl-img' src={nithinImage}></img>
+              <span className='ppl-text'>
+              <div className='ppl-name'>{'Nithin Reddy'}</div>
+              <div className='ppl-description'>{'Executive Director, co-founder'}</div>
+              </span>
+              </div>
             </Col>
             <Col>
-              <Ppl src={teamMember[2][0]} name={teamMember[2][1]} description={teamMember[2][2]} />
+              <div className='ppl-container'>
+              <img className='ppl-img' src={sopanImage}></img>
+              <span className='ppl-text'>
+              <div className='ppl-name'>{'Sopan Jalkote'}</div>
+              <div className='ppl-description'>{'Executive Director, co-founder'}</div>
+              </span>
+              </div>
             </Col>
           </Row>
           <Row>
             <Col>
-              <Ppl src={teamMember[3][0]} name={teamMember[3][1]} description={teamMember[3][2]} />
+              <div className='ppl-container'>
+              <img className='ppl-img' src={dyutiImage}></img>
+              <span className='ppl-text'>
+              <div className='ppl-name'>{'Dyuti Phaneesh'}</div>
+              <div className='ppl-description'>{'Executive Director, co-founder'}</div>
+              </span>
+              </div>
             </Col>
             <Col>
-              <Ppl src={teamMember[4][0]} name={teamMember[4][1]} description={teamMember[4][2]} />
+              <div className='ppl-container'>
+              <img className='ppl-img' src={tobyImage}></img>
+              <span className='ppl-text'>
+              <div className='ppl-name'>{'Toby Saunders'}</div>
+              <div className='ppl-description'>{'Developer'}</div>
+              </span>
+              </div>
             </Col>
             <Col></Col>
           </Row>
