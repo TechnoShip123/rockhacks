@@ -3,7 +3,7 @@ import JSConfetti from 'js-confetti';
 import './App.css';
 import c1 from './assets/card1.png';
 import c2 from './assets/card2.png';
-import logo from './assets/logo.jpeg';
+import logo from './assets/logo.png';
 import taskade from './assets/sponsors/taskade.png';
 import hack_club from './assets/sponsors/hack_club.png';
 import wolfram from './assets/sponsors/wolfram.png';
