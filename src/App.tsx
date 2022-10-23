@@ -144,23 +144,33 @@ function App() {
         <Container className='sponsor-container'>
           <Row>
             <Col className='sponsor-column'>
-              <img className='sponsor-image' src={taskade}></img>
+              <a href='https://www.taskade.com/' target='_blank'>
+                <img className='sponsor-image' src={taskade}  alt='taskade' />
+              </a>
             </Col>
             <Col className='sponsor-column-right'>
-              <img className='sponsor-image' src={wolfram}></img>
+              <a href='https://www.wolframalpha.com/' target='_blank'>
+                <img className='sponsor-image' src={wolfram} alt='wolfram' />
+              </a>
             </Col>
           </Row>
           <Row>
             <Col className='sponsor-column'>
-              <img className='sponsor-image' src={soal_tech} />
+              <a href='https://soaltech.com/' target='_blank'>
+                <img className='sponsor-image' id='soal_tech' src={soal_tech} alt='soal tech' />
+              </a>
             </Col>
             <Col className='sponsor-column'>
-              <img style={{marginTop: 20}} className='sponsor-image' src={girikon} />
+              <a href='https://www.girikon.com/' target='_blank'>
+                <img style={{marginTop: 20}} className='sponsor-image' src={girikon} alt='girikon' />
+              </a>
             </Col>
           </Row>
           <Row>
             <Col className='sponsor-column'>
-              <img style={{marginTop: 20}} className='sponsor-image' src={hack_club}></img>
+              <a href='https://hackclub.com/' target='_blank'>
+                <img style={{marginTop: 20}} className='sponsor-image' src={hack_club} alt='hack club' />
+              </a>
             </Col>
           </Row>
         </Container>
@@ -174,7 +184,7 @@ function App() {
         <p className='code-font'>Rock Hacks, Run by the awesome Rock Hacks team!</p>
         <p className='code-font smaller-font'>
           Fiscally sponsored by Hack Club
-          <br></br>
+          <br />
           Nonprofit EIN: 81-2908499
         </p>
       </section>

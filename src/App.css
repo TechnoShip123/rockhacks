@@ -19,6 +19,20 @@ nav > .homeIcon {
     will-change: filter;
 }
 
+#soal_tech {
+    animation: soal_tech 5s infinite;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(0 0 9px red);
+}
+
+@keyframes soal_tech {
+    0% {filter: drop-shadow(0 0 6px red);}
+    25% {filter: drop-shadow(0 0 4px green);}
+    50% {filter: drop-shadow(0 0 2px dodgerblue);}
+    75% {filter: drop-shadow(0 0 4px darkviolet);}
+    100% {filter: drop-shadow(0 0 6px red);}
+}
+
 nav > .homeIcon:hover {
     filter: drop-shadow(0 0 9px #646cffaa);
 }
@@ -56,7 +70,7 @@ nav > a:visited {
     padding: 10vw;
     text-align: center;
 }
-/* 
+/*
 .home > h1 {
     font-size: 45px;
 } */
@@ -106,7 +120,7 @@ Use a collapsing navbar for this scenario?
     padding-top: 3vw;
     padding-bottom: 3vw;
 }
-  
+
 h1 {
     font-size: 3.2em;
     line-height: 1.1;
@@ -115,10 +129,7 @@ h1 {
 
 .faq {
     background-color: #90AFFF;
-    padding-left: 12vw;
-    padding-right: 12vw;
-    padding-bottom: 5vw;
-    padding-top: 2vw;
+    padding: 2vw 12vw 5vw;
 }
 
 .faq-left {
@@ -163,7 +174,7 @@ h1 {
     vertical-align: top;
     font-size: 1.5vw;
     line-height: 2vw;
-    font-family: 'Courier Prime';
+    font-family: 'Courier Prime', cursive;
 }
 .ppl-description {
     font-size: 1.25vw;
