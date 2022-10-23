@@ -69,6 +69,8 @@ nav > a:visited {
     background-color: #364772;
     padding: 10vw;
     text-align: center;
+    background-image: url("assets/header_background.jpg");
+    background-repeat: no-repeat;
 }
 /*
 .home > h1 {
