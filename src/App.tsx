@@ -99,10 +99,13 @@ function App() {
             <Col style={{ objectFit: 'cover' }}>
               <img className='image' src={c1} />
             </Col>
-            <Col>Workshop Schedule</Col>
+            <Col>Hackathon Schedule</Col>
           </Row>
           <Row>
-            <Col>Hackathon Schedule</Col>
+            <Col>Location
+              <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d168855.9394974076!2d-97.8044022534303!3d30.461030247687898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cbc1ca3bbe15%3A0xcc0fd952b447b32c!2sSOAL%20Technologies!5e0!3m2!1sen!2sus!4v1666491539322!5m2!1sen!2sus'
+  width='400' height='300' style={{border: 0}} allowFullScreen={false} loading='lazy'
+  referrerPolicy='no-referrer-when-downgrade'/></Col>
             <Col>
               <img className='image' src={c2} />
             </Col>
