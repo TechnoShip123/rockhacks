@@ -7,6 +7,8 @@ import logo from './assets/logo.png';
 import taskade from './assets/sponsors/taskade.png';
 import hack_club from './assets/sponsors/hack_club.png';
 import wolfram from './assets/sponsors/wolfram.png';
+import girikon from './assets/sponsors/girikon.png';
+import soal_tech from './assets/sponsors/soal_tech.png';
 import { Container, Row, Col } from 'react-bootstrap';
 
 //@ts-ignore
@@ -150,7 +152,15 @@ function App() {
           </Row>
           <Row>
             <Col className='sponsor-column'>
-              <img className='sponsor-image' src={hack_club}></img>
+              <img className='sponsor-image' src={soal_tech} />
+            </Col>
+            <Col className='sponsor-column'>
+              <img style={{marginTop: 20}} className='sponsor-image' src={girikon} />
+            </Col>
+          </Row>
+          <Row>
+            <Col className='sponsor-column'>
+              <img style={{marginTop: 20}} className='sponsor-image' src={hack_club}></img>
             </Col>
           </Row>
         </Container>
