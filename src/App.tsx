@@ -99,7 +99,7 @@ function App() {
             <Col style={{ objectFit: 'cover' }}>
               <img className='image' src={c1} />
             </Col>
-            <Col>Hackathon Schedule</Col>
+            <Col><a href='https://www.canva.com/design/DAFRmtnvysI/Qttwxm7xrWS6QNYtrJvayw/view'>Hackathon Schedule</a></Col>
           </Row>
           <Row>
             <Col>Location
