@@ -9,6 +9,7 @@ import hack_club from './assets/sponsors/hack_club.png';
 import wolfram from './assets/sponsors/wolfram.png';
 import girikon from './assets/sponsors/girikon.png';
 import soal_tech from './assets/sponsors/soal_tech.png';
+import spice_fine_indian_austin from './assets/sponsors/spice_fine_indian_austin.png';
 import { Container, Row, Col } from 'react-bootstrap';
 
 //@ts-ignore
@@ -175,6 +176,11 @@ function App() {
             </Col>
           </Row>
           <Row>
+            <Col className='sponsor-column'>
+              <a href='https://spicefineindianaustin.com/' target='_blank'>
+                <img style={{marginTop: 20}} className='sponsor-image' src={spice_fine_indian_austin} alt='spice fine indian austin' />
+              </a>
+            </Col>
             <Col className='sponsor-column'>
               <a href='https://hackclub.com/' target='_blank'>
                 <img style={{marginTop: 20}} className='sponsor-image' src={hack_club} alt='hack club' />
